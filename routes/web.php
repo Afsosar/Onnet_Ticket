@@ -14,3 +14,12 @@
 Route::get('/', function () {
     return view('index');
 });
+
+
+Route::get('NuevoTicket', function () {
+    return view('NuevoTicket');
+});
+
+Route::get('form', function () {
+    return view('form');
+});

@@ -1,168 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8" />
-  <link rel="apple-touch-icon" sizes="76x76" href="{{asset('img/apple-icon.png')}}">
-  <link rel="icon" type="image/png" href="{{asset('img/onnet.png')}}">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-  <title>
-    Nuevo Ticket(s)
-  </title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<title>OndaNetwork</title>
+	<meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport' />
+	<link rel="icon" href="{{asset('img/onnet.png')}}" type="image/x-icon"/>
+	<link rel="stylesheet" type="text/css" href="{{asset('css/flaticon.css')}}">
 
 
+	<!-- Fonts and icons -->
+	<script src="{{asset('js/webfont.min.js')}}"></script>
+	<script>
+		WebFont.load({
+			google: {"families":["Lato:300,400,700,900"]},
+			custom: {"families":["Flaticon", "Font Awesome 5 Solid", "Font Awesome 5 Regular", "Font Awesome 5 Brands", "simple-line-icons"], urls: ["{{asset('css/fonts.min.css')}}"]},
+			active: function() {
+				sessionStorage.fonts = true;
+			}
+		});
+	</script>
 
-  <!-- CSS Files -->
-  <link href="{{asset('css/material-dashboard.css?v=2.1.1')}}" rel="stylesheet" />
+	<!-- CSS Files -->
+	<link rel="stylesheet" href="{{asset('css/bootstrap.min.css')}}">
+	<link rel="stylesheet" href="{{asset('css/atlantis.min.css')}}">
+
 
 </head>
+<body>
 
-
-<body class="">
-  <div class="wrapper ">
-
-    <div class="main-panel">
-      <!-- Navbar -->
-      <nav class="navbar navbar-expand-lg navbar-transparent navbar-absolute fixed-top ">
-        <div class="container-fluid">
-          <div class="navbar-wrapper">
-            <a class="navbar-brand" href="#pablo">Ticket(s)</a>
-          </div>
-
-
-        </div>
-      </nav>
-      <!-- Formulario para crear Nuevo ticket -->
-      <div class="content">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-md-12">
-              <div class="card">
-                <div class="card-header card-header-primary">
-                  <h4 class="card-title">Nuevo Ticket de Soporte</h4>
-                </div>
-                <div class="card-body">
-                  <form>
-                    <div class="row">
-                      <div class="col-md-3">
-                        <div class="form-group">
-                          <label class="bmd-label-floating">Username</label>
-                          <input type="text" class="form-control">
-                        </div>
-                      </div>
-                      <div class="col-md-4">
-                        <div class="form-group">
-                          <label class="bmd-label-floating">Email address</label>
-                          <input type="email" class="form-control">
-                        </div>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-md-6">
-                        <div class="form-group">
-                          <label class="bmd-label-floating">Fist Name</label>
-                          <input type="text" class="form-control">
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <div class="form-group">
-                          <label class="bmd-label-floating">Last Name</label>
-                          <input type="text" class="form-control">
-                        </div>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-md-12">
-                        <div class="form-group">
-                          <label class="bmd-label-floating">Adress</label>
-                          <input type="text" class="form-control">
-                        </div>
-                      </div>
-                    </div>
-                      <div class="row">
-                        <div class="col-md-12">
-
-	<label class="bmd-label-floating">Select</label>
-  												<select class="form-control input-border-bottom" id="selectFloatingLabel" required>
-  													<option value="">&nbsp;</option>
-  													<option>1</option>
-  													<option>2</option>
-  													<option>3</option>
-  													<option>4</option>
-  													<option>5</option>
-  												</select>
-  											</div>
-                        		</div>
-
-                            <div class="form-group">
-                              <label class="bmd-label-floating">Select</label>
-												<select class="form-control input-border-bottom">
-													<option value="">&nbsp;</option>
-													<option>1</option>
-													<option>2</option>
-													<option>3</option>
-													<option>4</option>
-													<option>5</option>
-												</select>
-
-											</div>
-
-                    <div class="row">
-                      <div class="col-md-4">
-                        <div class="form-group">
-                          <label class="bmd-label-floating">City</label>
-                          <input type="text" class="form-control">
-                        </div>
-                      </div>
-                      <div class="col-md-4">
-                        <div class="form-group">
-                          <label class="bmd-label-floating">Country</label>
-                          <input type="text" class="form-control">
-                        </div>
-                      </div>
-                      <div class="col-md-4">
-                        <div class="form-group">
-                          <label class="bmd-label-floating">Postal Code</label>
-                          <input type="text" class="form-control">
-                        </div>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-md-12">
-                        <div class="form-group">
-                          <label>About Me</label>
-                          <div class="form-group">
-                            <label class="bmd-label-floating"> Lamborghini Mercy, Your chick she so thirsty, I'm in that two seat Lambo.</label>
-                            <textarea class="form-control" rows="5"></textarea>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <button type="submit" class="btn btn-primary pull-right">Crear Ticket</button>
-                    <div class="clearfix"></div>
-                  </form>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
+	<div class="wrapper">
+					<!-- Header-->
+					<!-- Sidevar-->
+					@include('partials.header')
+				  @include('partials.sidebar')
+				  @yield('content')
 
 
 
+	<!-- Inicio panel de control -->
+		<div class="main-panel">
+			<div class="content">
+				<div class="panel-header bg-primary-gradient">
+					<div class="page-inner py-5">
+						<div class="d-flex align-items-left align-items-md-center flex-column flex-md-row">
+							<div>
+								<h2 class="text-white pb-2 fw-bold">Reguistro de Ticket </h2>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="page-inner mt--5">
+	<!--Formulario de creacion de un nuevo Ticket-->
+	        <div class="row">
+	          <div class="col-md-12">
+	            <div class="card full-height">
+	              <div class="card">
+	               	<div class="card-header card-header-warning">
+	                  <div class="card-title">Nuevo Ticket de Soporte </div>
+	                </div>
+	              </div>
+	              <div class="card-body">
+									<form>
+									<div class="form-row">
+									<div class="form-group col-md-6">
+									<div class="form-group">
+									<label for="inputState">Cliente</label>
+									<select id="inputState" class="form-control">
+									<option selected>Selecionar Cliente</option>
+									<option>...</option>
+									</select>
+									</div>
+									</div>
+									<div class="form-group col-md-6">
+									<div class="form-group">
+									<label for="inputState">Técnico</label>
+									<select id="inputState" class="form-control">
+									<option selected>Técnico a asignar</option>
+									<option>...</option>
+									</select>
+									</div>
+									</div>
+									</div>
+									<div class="form-row">
+									<div class="form-group col-md-6">
+									<div class="form-group">
+									<label for="inputAddress">Asunto del Ticket</label>
+									<input type="text" class="form-control" id="input" >
+									</div>
+										</div>
+									<div class="form-group col-md-6">
+									<div class="form-group">
+									<label for="inputAddress">Nombre del Solititante</label>
+									<input type="text" class="form-control" id="nombre" >
+									</div>
+										</div>
+									</div>
+									<div class="form-row">
+									<div class="form-group col-md-4">
+									<div class="form-group">
+									<label for="inputAddress">Visita agendada para</label>
+									<input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+									</div>
+									</div>
+									<div class="form-group col-md-4">
+									<div class="form-group">
+									<label for="inputState">Turno de la visita</label>
+									<select id="inputState" class="form-control">
+									<option selected>Selecionar Cliente</option>
+									<option>...</option>
+									</select>
+									</div>
+									</div>
+									<div class="form-group col-md-4">
+									<div class="form-group">
+									<label for="inputState">Agendado por</label>
+									<select id="inputState" class="form-control">
+									<option selected>Oficina</option>
+									<option>...</option>
+									</select>
+									</div>
+									</div>
+									</div>
+									</form>
+									<div class="card-action">
+										<button class="btn btn-default">Registrar</button>
+										<button class="btn btn-warning">Cancelar</button>
+									</div>
+								</div>
+								</div>
+								</div>
+	              </div>
+	            </div>
+	          </div>
+	        </div>
+	          <!--formulario de reguistro de tikects -->
 
-  <!--   Core JS Files   -->
-  <script src="{{asset('js/core/jquery.min.js')}}"></script>
-  <script src="{{asset('js/core/popper.min.js')}}"></script>
-  <script src="{{asset('js/core/bootstrap-material-design.min.js')}}"></script>
-  <script src="{{asset('js/plugin/perfect-scrollbar.jquery.min.js')}}"></script>
-  <!-- Control Center for Material Dashboard: parallax effects, scripts for the example pages etc -->
-  <script src="{{asset('js/material-dashboard.js?v=2.1.1')}}" type="text/javascript"></script>
-
+				</div>
+			</div>
+<!--Footer -->
+		   @include('partials.footer')
+		</div>
+	</div>
+	<!--   pluguin js  -->
+ @include('partials.pluginjs')
 
 </body>
-
 </html>

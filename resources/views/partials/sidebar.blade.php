@@ -36,7 +36,7 @@
           </a>
         </li>
         <li class="nav-item">
-        <a href="{{url('form')}}">
+          <a href="{{url('Ticket_Esperando_Respuesta')}}">
           <i class="fas fa-ticket-alt"></i>
             <p>Ticket(s) Esp Respuesta</p>
               <span class="badge";>1</span>

@@ -20,6 +20,6 @@ Route::get('NuevoTicket', function () {
     return view('NuevoTicket');
 });
 
-Route::get('form', function () {
-    return view('form');
+Route::get('Ticket_Esperando_Respuesta', function () {
+    return view('Ticket_Esperando_Respuesta');
 });

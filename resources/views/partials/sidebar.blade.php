@@ -1,4 +1,4 @@
-<!-- Menu de Configuracion de Ticket-->
+<!-- Menu de Configuracion de Ticket sidebar-->
 <div class="sidebar sidebar-style-2">
   <div class="sidebar-wrapper scrollbar scrollbar-inner">
     <div class="sidebar-content">
@@ -17,7 +17,7 @@
       </div>
       <ul class="nav nav-primary">
         <li class="nav-item active">
-          <a data-toggle="collapse" href="#dashboard" class="collapsed" aria-expanded="false">
+          <a data-toggle="collapse"href="{{url('NuevoTicket')}}" class="collapsed" aria-expanded="false">
             <i class="fas fa-home"></i>
             <p>Inicio</p>
           </a>
@@ -43,7 +43,7 @@
           </a>
         </li>
         <li class="nav-item">
-          <a href="widgets.html">
+            <a href="{{url('Estado_de_Ticket')}}">
           <i class="fas fa-ticket-alt"></i>
           <p>Ticket(s) Contestados</p>
             <span class="badge badge-warning">10</span>
@@ -68,4 +68,4 @@
     </div>
   </div>
 </div>
-<!-- Fin menu de Ticket -->}
+<!-- Fin menu de Ticket sidebar-->}

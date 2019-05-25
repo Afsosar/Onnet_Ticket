@@ -31,7 +31,7 @@
 					<!-- Sidevar-->
 					@include('partials.header')
 				  @include('partials.sidebar')
-				  @yield('content')
+				
 	<!-- Inicio panel de control -->
 		<div class="main-panel">
 			<div class="content">
@@ -47,7 +47,7 @@
 				</div>
 				<div class="page-inner mt--5">
 	<!--Tabla que muestra todos los estados que ha tenido los diferentes Ticket(s)-->
-	 @include('partials.tabla')
+			  @yield('content')
 				</div>
 			</div>
 <!--Footer -->

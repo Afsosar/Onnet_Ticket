@@ -1,3 +1,5 @@
+@extends('index')
+@section('content')
 <!--Tabla que muestra todos los estados que ha tenido los diferentes Ticket(s)-->
         <div class="row">
           <div class="col-md-12">
@@ -90,3 +92,4 @@
           </div>
         </div>
           <!--Tabla que muestra todos los estados que ha tenido los diferentes Ticket(s) fin -->
+@stop     

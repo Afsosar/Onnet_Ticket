@@ -1,3 +1,4 @@
+<!--  Inicio de Header-->
 <div class="main-header">
   <!-- EL LOGO DE LA PARET DE ARRIBA-->
   <div class="logo-header" data-background-color="blue">
@@ -76,4 +77,4 @@
     </div>
   </nav>
 </div>
-    <!-- Fin Header -->
+<!--Fin Header -->

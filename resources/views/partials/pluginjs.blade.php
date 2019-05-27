@@ -32,4 +32,4 @@
 <script src="{{asset('js/atlantis.min.js')}}"></script>
 <script src="{{asset('js/core/bootstrap-material-design.min.js')}}"></script>
 <!-- Datatables -->
-<script src="../../assets/js/plugin/datatables/datatables.min.js"></script>
+<script src="{{asset('js/plugin/datatables/datatables.min.js')}}"></script>

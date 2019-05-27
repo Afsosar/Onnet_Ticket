@@ -92,4 +92,4 @@
           </div>
         </div>
           <!--Tabla que muestra todos los estados que ha tenido los diferentes Ticket(s) fin -->
-@stop     
+@stop

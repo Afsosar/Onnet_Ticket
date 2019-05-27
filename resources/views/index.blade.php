@@ -3,9 +3,15 @@
 <head>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<title>OndaNetwork</title>
+	<script src="{{asset('js/jquery-3.3.1.js')}}"></script>
+
+	<script type="text/javascript" src="{{asset('js/jquery.dataTables.min.js')}}"></script>
+	<script type="text/javascript" src="{{asset('js/dataTables.responsive.min.js')}}"></script>
+	<script type="text/javascript" src="{{asset('datatable.js')}}"></script>
+
 	<meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport' />
 	<link rel="icon" href="{{asset('img/onnet.png')}}" type="image/x-icon"/>
-	<link rel="stylesheet" type="text/css" href="{{asset('css/flaticon.css')}}">
+
 
 	<!-- Fonts and icons -->
 	<script src="{{asset('js/webfont.min.js')}}"></script>
@@ -22,6 +28,8 @@
 	<!-- CSS Files -->
 	<link rel="stylesheet" href="{{asset('css/bootstrap.min.css')}}">
 	<link rel="stylesheet" href="{{asset('css/atlantis.min.css')}}">
+	<link rel="stylesheet" href="{{asset('css/jquery.dataTables.min.css')}}">
+<link rel="stylesheet" href="{{asset('css/responsive.dataTables.min.css')}}">
 
 </head>
 <body>
@@ -31,7 +39,7 @@
 					<!-- Sidevar-->
 					@include('partials.header')
 				  @include('partials.sidebar')
-				
+
 	<!-- Inicio panel de control -->
 		<div class="main-panel">
 			<div class="content">

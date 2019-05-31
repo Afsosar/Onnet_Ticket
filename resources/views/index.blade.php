@@ -1,68 +1,96 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<title>OndaNetwork</title>
-	<script src="{{asset('js/jquery-3.3.1.js')}}"></script>
+@extends('layouts/app')
+@section('content')
+<!--Tabla que muestra todos los estados que ha tenido los diferentes Ticket(s)-->
 
-	<script type="text/javascript" src="{{asset('js/jquery.dataTables.min.js')}}"></script>
-	<script type="text/javascript" src="{{asset('js/dataTables.responsive.min.js')}}"></script>
-	<script type="text/javascript" src="{{asset('datatable.js')}}"></script>
-
-	<meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport' />
-	<link rel="icon" href="{{asset('img/onnet.png')}}" type="image/x-icon"/>
-
-
-	<!-- Fonts and icons -->
-	<script src="{{asset('js/webfont.min.js')}}"></script>
-	<script>
-		WebFont.load({
-			google: {"families":["Lato:300,400,700,900"]},
-			custom: {"families":["Flaticon", "Font Awesome 5 Solid", "Font Awesome 5 Regular", "Font Awesome 5 Brands", "simple-line-icons"], urls: ["{{asset('css/fonts.min.css')}}"]},
-			active: function() {
-				sessionStorage.fonts = true;
-			}
-		});
-	</script>
-
-	<!-- CSS Files -->
-	<link rel="stylesheet" href="{{asset('css/bootstrap.min.css')}}">
-	<link rel="stylesheet" href="{{asset('css/atlantis.min.css')}}">
-	<link rel="stylesheet" href="{{asset('css/jquery.dataTables.min.css')}}">
-<link rel="stylesheet" href="{{asset('css/responsive.dataTables.min.css')}}">
-
-</head>
-<body>
-
-	<div class="wrapper">
-					<!-- Header-->
-					<!-- Sidevar-->
-					@include('partials.header')
-				  @include('partials.sidebar')
-
-	<!-- Inicio panel de control -->
-		<div class="main-panel">
-			<div class="content">
-				<div class="panel-header bg-primary-gradient">
-					<div class="page-inner py-5">
-						<div class="d-flex align-items-left align-items-md-center flex-column flex-md-row">
-							<div>
-								<h2 class="text-white pb-2 fw-bold">Panel de Control </h2>
-								<h5 class="text-white op-7 mb-2">de Tikkets</h5>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="page-inner mt--5">
-	<!--Tabla que muestra todos los estados que ha tenido los diferentes Ticket(s)-->
-			  @yield('content')
-				</div>
-			</div>
-<!--Footer -->
-		   @include('partials.footer')
-		</div>
-	</div>
-	<!--   pluguin js  -->
- @include('partials.pluginjs')
-</body>
-</html>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="card full-height">
+              <div class="card-header">
+                <div class="card-head-row">
+                  <div class="card-title" role="tab">Estado de Ticket(s) </div>
+                  <div class="card-tools">
+                    <ul class="nav nav-pills nav-secondary nav-pills-no-bd nav-sm" id="pills-tab" role="tablist">
+                      <li class="nav-item">
+                        <a class="nav-link" id="pills-today" data-toggle="pill" href="#pills-today" role="tab" aria-selected="true">Today</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" id="pills-week" data-toggle="pill" href="#pills-week" role="tab" aria-selected="false">Week</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" id="pills-month" data-toggle="pill" href="#pills-month" role="tab" aria-selected="false">Month</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body">
+                <div class="d-flex">
+                  <div class="avatar avatar-online">
+                    <span class="avatar-title rounded-circle border border-white bg-info">J</span>
+                  </div>
+                  <div class="flex-1 ml-3 pt-1">
+                    <h6 class="text-uppercase fw-bold mb-1">Joko Subianto <span class="text-warning pl-3">pending</span></h6>
+                    <span class="text-muted">I am facing some trouble with my viewport. When i start my</span>
+                  </div>
+                  <div class="float-right pt-1">
+                    <small class="text-muted">8:40 PM</small>
+                  </div>
+                </div>
+                <div class="separator-dashed"></div>
+                <div class="d-flex">
+                  <div class="avatar avatar-offline">
+                    <span class="avatar-title rounded-circle border border-white bg-secondary">P</span>
+                  </div>
+                  <div class="flex-1 ml-3 pt-1">
+                    <h6 class="text-uppercase fw-bold mb-1">Prabowo Widodo <span class="text-success pl-3">open</span></h6>
+                    <span class="text-muted">I have some query regarding the license issue.</span>
+                  </div>
+                  <div class="float-right pt-1">
+                    <small class="text-muted">1 Day Ago</small>
+                  </div>
+                </div>
+                <div class="separator-dashed"></div>
+                <div class="d-flex">
+                  <div class="avatar avatar-away">
+                    <span class="avatar-title rounded-circle border border-white bg-danger">L</span>
+                  </div>
+                  <div class="flex-1 ml-3 pt-1">
+                    <h6 class="text-uppercase fw-bold mb-1">Lee Chong Wei <span class="text-muted pl-3">closed</span></h6>
+                    <span class="text-muted">Is there any update plan for RTL version near future?</span>
+                  </div>
+                  <div class="float-right pt-1">
+                    <small class="text-muted">2 Days Ago</small>
+                  </div>
+                </div>
+                <div class="separator-dashed"></div>
+                <div class="d-flex">
+                  <div class="avatar avatar-offline">
+                    <span class="avatar-title rounded-circle border border-white bg-secondary">P</span>
+                  </div>
+                  <div class="flex-1 ml-3 pt-1">
+                    <h6 class="text-uppercase fw-bold mb-1">Peter Parker <span class="text-success pl-3">open</span></h6>
+                    <span class="text-muted">I have some query regarding the license issue.</span>
+                  </div>
+                  <div class="float-right pt-1">
+                    <small class="text-muted">2 Day Ago</small>
+                  </div>
+                </div>
+                <div class="separator-dashed"></div>
+                <div class="d-flex">
+                  <div class="avatar avatar-away">
+                    <span class="avatar-title rounded-circle border border-white bg-danger">L</span>
+                  </div>
+                  <div class="flex-1 ml-3 pt-1">
+                    <h6 class="text-uppercase fw-bold mb-1">Logan Paul <span class="text-muted pl-3">closed</span></h6>
+                    <span class="text-muted">Is there any update plan for RTL version near future?</span>
+                  </div>
+                  <div class="float-right pt-1">
+                    <small class="text-muted">2 Days Ago</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+          <!--Tabla que muestra todos los estados que ha tenido los diferentes Ticket(s) fin -->
+@stop

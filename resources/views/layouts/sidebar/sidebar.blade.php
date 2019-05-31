@@ -17,7 +17,7 @@
       </div>
       <ul class="nav nav-primary">
         <li class="nav-item active">
-              <a href="{{url('/')}}">
+              <a href="{{url('index')}}">
             <i class="fas fa-home"></i>
             <p>Inicio</p>
           </a>

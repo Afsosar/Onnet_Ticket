@@ -1,11 +1,11 @@
-@extends('index')
+@extends('layouts/app')
 @section('content')
 	<!--Formulario de creacion de un nuevo Ticket-->
 	        <div class="row">
 	          <div class="col-md-12">
 	            <div class="card full-height">
-	              <div class="card">
-	               	<div class="card-header card-header-warning">
+	              <div class="card-row">
+	               <div class="card-header card-header-primary">
 	                  <div class="card-title">Nuevo Ticket de Soporte </div>
 	                </div>
 	              </div>

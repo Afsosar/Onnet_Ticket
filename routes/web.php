@@ -15,9 +15,6 @@ Route::get('/', function () {
     return view('index');
 });
 
-Route::get('Estado_de_Ticket', function () {
-    return view('Estado_de_Ticket');
-});
 
 Route::get('NuevoTicket', function () {
     return view('NuevoTicket');

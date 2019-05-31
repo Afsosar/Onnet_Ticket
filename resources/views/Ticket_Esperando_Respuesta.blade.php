@@ -1,4 +1,4 @@
-@extends('index')
+@extends('layouts/app')
 @section('content')
 
   <!--Tabla que muestra Ticket esperando Respuesta-->
